@@ -38,7 +38,7 @@ class Clock extends Component {
 				bday.setFullYear(today.getFullYear() + 1);
 			}
 		}
-		
+
 		var distance = bday.getTime() - today.getTime();
 
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -61,7 +61,7 @@ class Clock extends Component {
 
 		var distance = today.getTime() - bday.getTime();
 		var daysOld = Math.floor(distance / (1000 * 60 *60 * 24));
-		var yearsOld = Number((daysOld/365).toFixed(0));
+		var yearsOld = Number((daysOld/365).(0));
 
 		return yearsOld
 	}.bind(this)
@@ -72,6 +72,10 @@ class Clock extends Component {
 			const timeRemaining = this.getTimeRemaining(this.birthday)
 			this.setState({ timeRemaining: timeRemaining })
 		}, 1000);
+	}
+
+	componentWillMount() {
+		clearInterval(this.timer);
 	}
 
 	render() {
