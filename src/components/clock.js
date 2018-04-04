@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 class Clock extends Component {
@@ -15,7 +14,6 @@ class Clock extends Component {
         this.state = {
             timeRemaining: this.getTimeRemaining(props.birthdayFormState.startDate.toString())
         }
-
     }
 
     getTimeRemaining(birthday) {
