@@ -10,6 +10,10 @@ export default class App extends Component {
           <div className="header__skew">
               <div className="header__subskew">
               <div className='header_sub_subskew'>
+              <div className='header_sub_sub_subskew'>
+              <div className='header_sub_sub_sub_subskew'>
+              </div>
+              </div>
               </div>   
               </div>
           </div>
