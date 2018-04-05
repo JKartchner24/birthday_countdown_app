@@ -32,9 +32,9 @@ class BirthdayForm extends Component {
     }
 
     handleChangeDate() {
-    	this.setState({
-    		formCompleted: false
-    	})
+        this.setState({
+            formCompleted: false
+        })
     }
 
     render() {
@@ -42,10 +42,9 @@ class BirthdayForm extends Component {
             <div>
             {
                 this.state.formCompleted ?
-                
                     <div>
                         <Clock birthdayFormState={this.state}/>
-                        <a onClick={this.handleChangeDate}>Change Date</a>
+                        <a className="change-date" onClick={this.handleChangeDate}>Change Date</a>
                     </div>
                 :
                     <div>

@@ -1,16 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: var(--montserrat);
+    font-family: var(--montserrat);
 }
 
 :root {
-	--montserrat: "Montserrat", sans-serif;
-	--roboto: 'Roboto Condensed', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto Condensed', sans-serif;
     --roboto-condensed: 'Roboto', sans-serif;
     
     --blue-primary: #518bde;

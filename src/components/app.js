@@ -5,14 +5,16 @@ export default class App extends Component {
   render() {
     return (
       <div>
-     		<header>
-     			<h1>Birthday Countdown</h1>
-      				<div className='header_skew'>
-	     			<div className='header_subskew'>
-	        			<BirthdayForm />
-	        		</div>
-	        	</div>
-	        </header>
+        <header>
+          <h1>Birthday Countdown</h1>
+          <div className="header__skew">
+              <div className="header__subskew">
+              <div className='header_sub_subskew'>
+              </div>   
+              </div>
+          </div>
+        </header>
+        <BirthdayForm />
       </div>
     );
   }
